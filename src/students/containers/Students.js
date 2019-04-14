@@ -22,7 +22,15 @@ class Students extends Component {
                     {this.state.students.map(student => (
                         <div key={student.login.uuid}>
                             <img src={student.picture.large} alt="" />
-                            {student.name.first}{student.name.last}
+                            <p>
+                                imię: {student.name.first}
+                            </p>
+                            <p>
+                                nazwisko: {student.name.last}
+                            </p>
+                            <p>
+                                email: {student.email}
+                            </p>
                         </div>
                     ))}
                 </div>
